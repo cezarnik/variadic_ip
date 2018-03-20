@@ -10,4 +10,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -T ip_filter -ucezarnik:$BINTRAY_API_KEY "https://api.bintray.com/content/cezarnik/homework/ip_filter/ip_filter-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1" 
+  - curl -T ip_filter-Linux.deb -ucezarnik:$BINTRAY_API_KEY "https://api.bintray.com/content/cezarnik/homework/ip_filter/ip_filter-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1" 
