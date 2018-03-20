@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE test
+#define BOOST_TEST_MODULE filter_test
 #include <boost/test/unit_test.hpp>
 #include "filter.h"
 
@@ -6,7 +6,7 @@ BOOST_AUTO_TEST_SUITE(test)
 	
 	BOOST_AUTO_TEST_CASE(split_fun){
 
-		BOOST_CHECK(split("",'/t')==std::vector<std::string>({""}));
+		BOOST_CHECK(split("",'\t')==std::vector<std::string>({""}));
 		BOOST_CHECK(split("  ",' ')==std::vector<std::string>({"","",""}));
 	}
 
