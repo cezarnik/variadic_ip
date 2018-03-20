@@ -1,11 +1,9 @@
 #include "filter.h"
 std::vector<std::tuple<int,int,int,int>> IPs;
 
+
 int main(){
     std::string s;
-    #ifdef __kolya
-        freopen("input.txt","r",stdin);
-    #endif
     while(getline(std::cin,s)){
         auto strs=split(s,'\t');
         auto one=split(strs[0],'.');
