@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
 project(ip_filter VERSION 1.0.0)
-find_package(Boost COMPONENTS unit_test_framework REQUIRED))
+find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 add_executable(ip_filter_cli  main.cpp)
 
