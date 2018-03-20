@@ -1,5 +1,10 @@
 #ifndef H_FILTER 
 #define H_FILTER
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <tuple>
+#include <string>
 template<class T>
 std::vector<int> contains(int pos,T pattern){
     	std::vector<int> res=std::vector<int>();
