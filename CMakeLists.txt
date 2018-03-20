@@ -22,7 +22,7 @@ target_link_libraries(ip_filter_cli filter)
 
 target_link_libraries(filter_test ${Boost_LIBRARIES} filter)
 
-install(TARGETS ip_filter_cli RUNTIME_DESTINATION bin)
+install(TARGETS ip_filter_cli RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
