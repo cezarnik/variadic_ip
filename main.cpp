@@ -24,8 +24,8 @@ int main(){
     for(int i=0; i<(int)IPs.size(); ++i){
         std::vector<int> good_46=contains(1,46,std::get<0>(IPs[i]),std::get<1>(IPs[i]));
         std::vector<int> good_70=contains(1,70,std::get<0>(IPs[i]),std::get<1>(IPs[i]));
-	std:: vector<int> it_46=find(good_46.begin(),good_46.end(),1);
-        std::vector<int> it_70=find(good_70.begin(),good_70.end(),2);
+	auto it_46=find(good_46.begin(),good_46.end(),1);
+        auto it_70=find(good_70.begin(),good_70.end(),2);
         if (it_46!=good_46.end() && it_70!=good_70.end())
             print(IPs[i]);
     }
