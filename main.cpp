@@ -16,16 +16,16 @@ int main(){
         print(it);
     }
     for(int i=0; i<(int)IPs.size(); ++i){
-        auto good=contains(1,1,std::get<0>(IPs[i]));
+        vector<int> good=contains(1,1,std::get<0>(IPs[i]));
         if (!good.empty() && good[0]==1){
             print(IPs[i]);
         }
     }
     for(int i=0; i<(int)IPs.size(); ++i){
-        auto good_46=contains(1,46,std::get<0>(IPs[i]),std::get<1>(IPs[i]));
-        auto good_70=contains(1,70,std::get<0>(IPs[i]),std::get<1>(IPs[i]));
-        auto it_46=find(good_46.begin(),good_46.end(),1);
-        auto it_70=find(good_70.begin(),good_70.end(),2);
+        vector<int> good_46=contains(1,46,std::get<0>(IPs[i]),std::get<1>(IPs[i]));
+        vector<int> good_70=contains(1,70,std::get<0>(IPs[i]),std::get<1>(IPs[i]));
+        vector<int> it_46=find(good_46.begin(),good_46.end(),1);
+        vector<int> it_70=find(good_70.begin(),good_70.end(),2);
         if (it_46!=good_46.end() && it_70!=good_70.end())
             print(IPs[i]);
     }
