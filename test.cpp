@@ -13,7 +13,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 	BOOST_AUTO_TEST_CASE(convert_fun){
 		std::string s1="111";
 		std::string s2="0";
-		std::string s1="01";
+		std::string s3="01";
 		BOOST_CHECK(convert(s1)==111);
 		BOOST_CHECK(convert(s2)==0);
 		BOOST_CHECK(convert(s3)==1);
