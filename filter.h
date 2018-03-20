@@ -22,7 +22,7 @@ template<typename T>
 void print(const T el);
 
 template<typename T,typename... Args>
-void print(const T el,Args args...);
+void print(const T el,Args... args);
 
 void print(std::tuple<int,int,int,int> tup);
 
