@@ -6,7 +6,10 @@ std::vector<IP> process(std::vector<std::string>& input){
     std::vector<IP> IPs;
     for(auto to:input){
 	auto one=split(to,'.');
-       	auto tup=std::make_tuple(std::stoi(one[0]),std::stoi(one[1]),std::stoi(one[2]),std::stoi(one[3]));
+	int size=(int)one.size();
+       	if (size!=4)
+		continue;
+	auto tup=std::make_tuple(std::stoi(one[0]),std::stoi(one[1]),std::stoi(one[2]),std::stoi(one[3]));
 	IPs.push_back(tup);
     }
 
