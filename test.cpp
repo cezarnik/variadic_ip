@@ -11,11 +11,11 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 	}
 
 	BOOST_AUTO_TEST_CASE(overall_fun){
-		std::string input{"121.222.132.213\n"
-				  "223.123.46.70\n"
-				  "1.1.1.1\n"
-				  "46.46.46.46\n"
-				  "70.70.70.70\n"};
+		std::vector<std::string> input{"121.222.132.213",
+				  "223.123.46.70",
+				  "1.1.1.1",
+				  "46.46.46.46",
+				  "70.70.70.70"};
 		std::vector<IP> expected_output{
 			std::make_tuple(223,123,46,70),
 			std::make_tuple(121,222,231,213),
