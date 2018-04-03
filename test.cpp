@@ -15,7 +15,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 				  "223.123.46.70\n"
 				  "1.1.1.1\n"
 				  "46.46.46.46\n"
-				  "70.70.70.70\n"}
+				  "70.70.70.70\n"};
 		std::vector<IP> expected_output{
 			std::make_tuple(223,123,46,70),
 			std::make_tuple(121,222,231,213),
@@ -25,7 +25,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 			std::male_tuple(1,1,1,1),
 			std::make_tuple(223,123,46,70),
 			std::make_tuple(46,46,46,46)		
-		}
+		};
 		std::vector<IP> result=process(input); 
 		BOOST_CHECK(result.size()==expected_output.size());
 		int iterator=0;	
