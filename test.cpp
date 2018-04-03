@@ -10,7 +10,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 		BOOST_CHECK(split("  ",' ')==std::vector<std::string>({"","",""}));
 	}
 
-	BOOST_AUTO_TEST_CASE(overall_fun){
+	/*BOOST_AUTO_TEST_CASE(overall_fun){
 		std::vector<std::string> input1{"121.222.132.213",
 				  "223.123.46.70",
 				  "1.1.1.1",
@@ -36,5 +36,5 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 		}
 		result=process(input2);	
 		BOOST_CHECK(result.empty());
-	}
+	}*/
 BOOST_AUTO_TEST_SUITE_END()
