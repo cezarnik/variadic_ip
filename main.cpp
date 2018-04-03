@@ -1,7 +1,7 @@
 #include "process.h"
 #include <functional>
 std::vector<std::string> strings;
-
+#include <cassert>
 int main(){
 	std::string s;
 	while(getline(std::cin,s)){

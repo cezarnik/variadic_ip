@@ -10,7 +10,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 		BOOST_CHECK(split("  ",' ')==std::vector<std::string>({"","",""}));
 	}
 
-	/*BOOST_AUTO_TEST_CASE(overall_fun){
+		BOOST_AUTO_TEST_CASE(overall_fun){
 		std::vector<std::string> input1{"121.222.132.213",
 				  "223.123.46.70",
 				  "1.1.1.1",
@@ -19,7 +19,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 		std::vector<std::string> input2{"1","2","3"};
 		std::vector<IP> expected_output1{
 			std::make_tuple(223,123,46,70),
-			std::make_tuple(121,222,231,213),
+			std::make_tuple(121,222,132,213),
 			std::make_tuple(70,70,70,70),
 			std::make_tuple(46,46,46,46),
 			std::make_tuple(1,1,1,1),
@@ -36,5 +36,5 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 		}
 		result=process(input2);	
 		BOOST_CHECK(result.empty());
-	}*/
+	}
 BOOST_AUTO_TEST_SUITE_END()
