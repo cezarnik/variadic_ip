@@ -22,7 +22,7 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 			std::make_tuple(70,70,70,70),
 			std::make_tuple(46,46,46,46),
 			std::make_tuple(1,1,1,1),
-			std::male_tuple(1,1,1,1),
+			std::make_tuple(1,1,1,1),
 			std::make_tuple(223,123,46,70),
 			std::make_tuple(46,46,46,46)		
 		};
