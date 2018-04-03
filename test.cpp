@@ -27,6 +27,8 @@ BOOST_AUTO_TEST_SUITE(filter_test)
 			std::make_tuple(46,46,46,46)		
 		};
 		std::vector<IP> result=process(input); 
+		for(auto ip:result)
+			print(ip);
 		BOOST_CHECK(result.size()==expected_output.size());
 		int iterator=0;	
 		for(auto ip:result){
